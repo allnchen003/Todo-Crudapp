@@ -19,7 +19,6 @@ public class TodoService {
     public Task getTodoById(Long taskId){
         return repo.findById(taskId).orElse(new Task());
     }
-
     public void addTask(Task todo){
         repo.save(todo);
     }
@@ -29,4 +28,7 @@ public class TodoService {
     public void deleteTask(Long taskId){
         repo.deleteById(taskId);
     }
+
+    
+
 }
