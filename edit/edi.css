@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+label {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 0 5px 0 15px;
+}
+
+input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+button[type="submit"],
+#goback {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+#goback:hover {
+    background-color: #0056b3;
+}
+
+#goback {
+    background-color: #6c757d;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#goback:hover {
+    background-color: #545b62;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button[type="submit"],
+    #goback {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

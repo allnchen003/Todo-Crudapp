@@ -1,0 +1,129 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+    border: 1px solid black;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    padding: 12px 15px;
+    font-size: 14px;
+    text-align: left;
+    color: #555;
+    border: 1px solid black;
+}
+
+tbody td button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+#mc{
+    background-color: #2ee358;
+    color: #f1f1f1;
+}
+#ed{
+    background-color: rgb(0, 208, 255);
+    color: #f1f1f1;
+    
+}
+#del{
+    background-color: #c82333;
+    color: #f1f1f1;
+}
+button.mark-completed {
+    background-color: #28a745;
+    color: white;
+}
+button.mark-completed:hover {
+    background-color: #218838;
+}
+
+button.edit {
+    background-color: #ffc107;
+    color: white;
+}
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+button.delete:hover {
+    background-color: #c82333;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    thead th, tbody td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+#add{
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    outline: none;
+}
